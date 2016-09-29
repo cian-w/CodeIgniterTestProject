@@ -32,6 +32,6 @@ class Welcome extends CI_Controller {
 
 		$data['user'] = $this->model_users->getusers();
 
-		$this->load->view('model_users', $data);
+		$this->load->view('view_home', $data);
 	}
 }
