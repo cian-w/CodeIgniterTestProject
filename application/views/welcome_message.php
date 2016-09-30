@@ -68,17 +68,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <body>
 
 <div id="container">
-	<h1>Welcome to CodeIgniter!</h1>
+	<h1>Welcome to Kinsale Rentals</h1>
+	<a href="test.php">Link</a>
 
 	<div id="body">
 		<?php
-		foreach($firstname as $object){
-			echo $object->firstname. '<br/>';
+		foreach($name as $object){
+			echo $object->name. '<br/>';
 		}
 		echo '<br/><br/><br/>';
 
 		foreach($users as $object){
-			echo $object->firstname . '\'s email address is ' . $object->email . '<br/>';
+			echo $object->name . '\'s email address is ' . $object->email . '<br/>';
 		}
 		?>
 	</div>

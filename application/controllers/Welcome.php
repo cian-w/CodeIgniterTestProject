@@ -30,8 +30,8 @@ class Welcome extends CI_Controller {
 		$data['page_header'] = 'Intro to MVC';
 		$data['name'] = $this->model_users->getFirstNames();
 
-		$data['user'] = $this->model_users->getusers();
+		$data['users'] = $this->model_users->getusers();
 
-		$this->load->view('view_home', $data);
+		$this->load->view('welcome_message', $data);
 	}
 }

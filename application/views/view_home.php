@@ -14,7 +14,7 @@
         $assoc_array = array('name' => 'CodeIgniter', 'Size' => '3.9mb');
 
         //returns "CodeIgniter"
-         element('name', $assoc_array). '<br/>';
+        echo element('name', $assoc_array). '<br/>';
 
         //returns NULL
         echo element('name', $assoc_array). 'echoing NULL echoes empty string...<br/>';

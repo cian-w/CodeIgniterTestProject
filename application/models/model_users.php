@@ -4,9 +4,9 @@
             parent::__construct();//call model constructor
         }
         function getFirstNames(){
-            $query = $this->db->query('SELECT name FROM users'); // returns object
+            $query = $this->db->query('SELECT * FROM users'); // returns object
 
-            if($query->num_rows > 0){
+            if($query->num_rows() > 0){
                 return $query->result();
             }
             else{
